@@ -1,0 +1,245 @@
+<!DOCTYPE html> <html>
+<head>
+<title>Jasvant Singh Dosanjh - CSI2520 - Assignment 1</title>
+<meta name="author" content="Jasvant Singh Dosanjh" />
+<meta name="description" content="Lab 3 - Hearty Delights Restaurant: Home Page" />
+
+<style>
+    /* CSS Code for everything else */
+   #header{
+    background-color: #2196F3
+      margin: 20px 200px 20px 200px;
+      text-align: center;
+      padding:20px;
+      color: white;
+   }
+   #footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+   #header,#content,#footer{
+      border:1px solid #000;
+      background-color: #2196F3
+   }
+   /* Style the links inside the sidenav */
+#mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 115px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+/* Navigation Bar CSS CODE */
+/* about tab */
+#about {
+  top: 170px;
+  background-color: #4CAF50;
+}
+/* menu tab */
+#menu {
+  top: 230px;
+  background-color: #2196F3; /* Blue */
+}
+/* contact tab */
+#contact {
+  top: 290px;
+  background-color: #f44336; /* Red */
+}
+/* Social Media Button Icons CSS CODE
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 62%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+/* facebook icon */
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* twitter icon */
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+/* Google Icon */
+.google {
+  background: #dd4b39;
+  color: white;
+}
+/* linkedin icon */
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+/* youtube icon */
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create three columns of equal width */
+.columns {
+  float: left;
+  width: 33.3%;
+  padding: 8px;
+}
+
+/* Style the list */
+.price {
+  list-style-type: none;
+  border: 1px solid #eee;
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Add shadows on hover */
+.price:hover {
+  box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+}
+
+/* Pricing header */
+.price .header {
+  background-color: blue;
+  color: white;
+  font-size: 25px;
+}
+
+/* List items */
+.price li {
+  border-bottom: 1px solid #3B5998;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+  background-color: aliceblue;
+  font-size: 20px;
+}
+
+/* The "Purchase" button */
+.button {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 10px 25px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* Change the width of the three columns to 100% 
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 600px) {
+  .columns {
+    width: 100%;
+  }
+}
+</style>
+<body>
+<!-- HTML Code -->
+<div id="header">
+      <h1> Hearty Delights <3 </h1>
+        <h4> <em> Unresistable foods for your sweet tooth!</em></h4>
+        <p> We have been serving the sweet tooth enthusiats for like never! 
+                You can check out our offerings in the menu below, and keep looking for more to come in the future!!! 
+                We look forward to opening our newest store in <a href="https://www.nationstates.net/nation=franluxin">FranLuxIn</a>. </p>
+   </div>
+   <div id="mySidenav" class="sidenav">
+    <a href="#" id="about">About</a>
+    <a href="#" id="menu">Menu</a>
+    <a href="#" id="contact">Contact</a>
+  </div>
+
+<div class="columns">
+        <ul class="price">
+          <li class="header">Happy Meal</li>
+          <li class="grey">$ 15.99</li>
+          <li>Frozen Chocolate Banana</li>
+            <li> Dark Chocolate</li>
+            <li> Chocolate Milk</li>
+            <li> All-Fruit Popsicle</li>
+          <li class="grey"><a href="#" class="button">Purchase</a></li>
+        </ul>
+      </div>
+      <div class="columns">
+            <ul class="price">
+              <li class="header">Kids Meal</li>
+              <li class="grey">$ 11.99</li>
+              <li>Choco-Nut Popcorn</li>
+              <li> Banana Ice Cream</li>
+              <li> Nutella Yogurt Dip with Fruit</li>
+              <li> Peanut Butter and Chocolate Pretzels</li>
+              <li class="grey"><a href="#" class="button">Purchase</a></li>
+            </ul>
+          </div>
+          <div class="columns">
+                <ul class="price">
+                  <li class="header">Fill-Me-Up Meal</li>
+                  <li class="grey">$ 12.99</li>
+                  <li> Cinnamon Toast</li>
+                    <li> “Banana Butter” Rice Cake</li>
+                    <li> Dark Chocolate</li>
+                    <li> "Raw Milk" Milk Shake</li>
+                  <li class="grey"><a href="#" class="button">Purchase</a></li>
+                </ul>
+              </div>
+  <!-- Load font awesome icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<!-- The social media icon bar -->
+<div class="icon-bar">
+  <a href="#" class="facebook"><i class="fa fa-facebook"></i></a> 
+  <a href="#" class="twitter"><i class="fa fa-twitter"></i></a> 
+  <a href="#" class="google"><i class="fa fa-google"></i></a> 
+  <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="#" class="youtube"><i class="fa fa-youtube"></i></a> 
+</div>
+
+   <div id="footer">
+    <p> 115 S. Library Dr, Rochester Hills, MI 48307</br>
+    Phone: 1234567890</br>
+    Sun - Sat: 09:00 - 21:00</p>
+    <h6>&copy; Hearty Delights</h6>
+ </div>
+ </body>
+ </head>
+ </html>
