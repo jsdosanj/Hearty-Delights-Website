@@ -1,0 +1,112 @@
+<!DOCTYPE html> <html>
+<head>
+<title>Jasvant Singh Dosanjh - CSI2520 - Assignment 1</title>
+<meta name="author" content="Jasvant Singh Dosanjh" />
+<meta name="description" content="Lab 3 - Hearty Delights Restaurant: Menu Page" />
+
+<style>
+.header {
+  padding: 10px;
+  text-align: center;
+  background:  #2196F3;
+  color: white;
+  font-size: 30px;
+  margin: auto;
+  width: 75%;
+}
+
+.body {
+  padding: 10px;
+  text-align: center;
+  background:  #2196F3;
+  color: white;
+  font-size: 30px;
+  margin: auto;
+  width: 75%;
+}
+
+/*Home button */
+.button {
+  background-color: white;
+  border: none;
+  color: #2196F3;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+
+   /* Style the links inside the sidenav */
+   #mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 115px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* Navigation Bar CSS CODE */
+/* about tab */
+#about {
+  top: 170px;
+  background-color: #4CAF50;
+}
+
+/* menu tab */
+#menu {
+  top: 230px;
+  background-color: #2196F3; /* Blue */
+}
+
+/* contact tab */
+#contact {
+  top: 290px;
+  background-color: #f44336; /* Red */
+}
+
+</style>
+
+<body>
+<div class="header">
+  <h1>Hearty Delights</h1>
+  <p>Sweet Tooth Menu</p>
+</div>
+
+<div id="mySidenav" class="sidenav">
+    <a href="about_page.html" id="about">About</a>
+    <a href="menu_page.html" id="menu">Menu</a>
+    <a href="contact_page.html" id="contact">Contact</a>
+  </div>
+
+<div class="body">
+      <h4> <em> Unresistable foods for your sweet tooth!</em></h4>
+      <li>Frozen Chocolate Banana</li>
+      <li> Dark Chocolate</li>
+      <li> Chocolate Milk</li>
+      <li> All-Fruit Popsicle</li>
+      <li>Choco-Nut Popcorn</li>
+      <li> Banana Ice Cream</li>
+      <li> Nutella Yogurt Dip with Fruit</li>
+      <li> Peanut Butter and Chocolate Pretzels</li>
+      <li> Cinnamon Toast</li>
+      <li> "Banana Butter" Rice Cake</li>
+      <li> Dark Chocolate</li>
+      <li> "Raw Milk" Milk Shake</li>
+      <button onclick="window.location.href = 'Lab3_part2.html';">Home</button>
+ </div>
+ 
+ </body>
+ </head>
+ </html>

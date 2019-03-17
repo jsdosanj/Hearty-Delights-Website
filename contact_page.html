@@ -21,7 +21,7 @@ input[type=text], select, textarea {
 }
 
 input[type=submit] {
-  background-color: #4CAF50;
+  background-color: blue;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -29,14 +29,17 @@ input[type=submit] {
 }
 
 input[type=submit]:hover {
-  background-color: #45a049;
+  background-color: blue;
 }
 
 /* Style the container/contact section */
 .container {
   border-radius: 5px;
-  background-color: #f2f2f2;
+  background-color:  #2196F3;
+  color: white;
   padding: 10px;
+  margin: auto;
+  width: 75%;
 }
 
 /* Create two columns that float next to eachother */
@@ -61,19 +64,79 @@ input[type=submit]:hover {
     margin-top: 0;
   }
 }
+
+/*Home button */
+.button {
+  background-color: white;
+  border: none;
+  color: #2196F3;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+
+   /* Style the links inside the sidenav */
+   #mySidenav a {
+  position: absolute; /* Position them relative to the browser window */
+  left: -80px; /* Position them outside of the screen */
+  transition: 0.3s; /* Add transition on hover */
+  padding: 15px; /* 15px padding */
+  width: 115px; /* Set a specific width */
+  text-decoration: none; /* Remove underline */
+  font-size: 20px; /* Increase font size */
+  color: white; /* White text color */
+  border-radius: 0 5px 5px 0; /* Rounded corners on the top right and bottom right side */
+}
+
+#mySidenav a:hover {
+  left: 0; /* On mouse-over, make the elements appear as they should */
+}
+
+/* Navigation Bar CSS CODE */
+/* about tab */
+#about {
+  top: 170px;
+  background-color: #4CAF50;
+}
+
+/* menu tab */
+#menu {
+  top: 230px;
+  background-color: #2196F3; /* Blue */
+}
+
+/* contact tab */
+#contact {
+  top: 290px;
+  background-color: #f44336; /* Red */
+}
+
 </style>
 
 
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="about_page.html" id="about">About</a>
+        <a href="menu_page.html" id="menu">Menu</a>
+        <a href="contact_page.html" id="contact">Contact</a>
+      </div>
 
 <div class="container">
   <div style="text-align:center">
     <h2><em>Contact Us</em></h2>
     <p>Swing by for a cup of coffee, or leave us a message (if that's your cup of tea :P ):</p>
   </div>
+
   <div class="row">
     <div class="column">
       <img src="/w3images/map.jpg" style="width:100%">
     </div>
+
     <div class="column">
       <form action="/action_page.php">
         <label for="fname">First Name</label>
@@ -91,10 +154,18 @@ input[type=submit]:hover {
           <option value="Germany">Germany</option>
         </option>
         </select>
+
         <label for="subject">Subject</label>
         <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
         <input type="submit" value="Submit">
       </form>
+
     </div>
+
+    <button onclick="window.location.href = 'Lab3_part2.html';">Home</button>
   </div>
 </div>
+
+</body>
+</head>
+</html>
